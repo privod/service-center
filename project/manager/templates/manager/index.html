@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    {% if atm_list %}
+        <ul>
+        {% for atm in atm_list %}
+            <li><a href="/map/{{ atm.ref }}/">{{ atm.serial }}</a></li>
+        {% endfor %}
+        </ul>
+    {% else %}
+        <p>No ATMs are available.</p>
+    {% endif %}
+</body>
+</html>
