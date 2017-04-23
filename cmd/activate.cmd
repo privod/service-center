@@ -1,6 +1,8 @@
 @echo off
 
-call env\Scripts\activate
+cd ..\project
+
+call ..\env\Scripts\activate
 
 CMD /K 
 
